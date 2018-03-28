@@ -10,15 +10,17 @@ body {
 
 a {
   text-decoration: none;
+  color: #000000;
+  margin: .5em 0;
 }
 
 h1,
 h2,
-h3,
-a {
-	color: #000000;
+h3 {
+  color: #014c63;
   margin: .5em 0;
 }
+
 
 p {
 	color: #000000;
@@ -51,7 +53,7 @@ img {
 }
 
 .main-nav a:hover {
-	color: #ff0000;
+	color: #008b99;
 }
 /** Page Elements **/
 
@@ -109,6 +111,9 @@ img {
 }
 .bottom-nav {
   display: none;
+}
+.bottom-nav a:hover {
+	color: #008b99;
 }
 
 /** Media Queries **/
