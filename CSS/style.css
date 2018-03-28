@@ -128,14 +128,21 @@ img {
   .profile-photo {
     float: right;
     width: 40%;
-    margin-left: 10px;
-
+    margin-left: 20px;
   }
   .profile-text {
   font-size: 1.25em;
   text-align: left;
   }
-
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell  {
+    width: 50%;
+    padding: 0 1em;
+  }
   .contact {
     margin: auto;
     width: 60%;
@@ -159,22 +166,13 @@ img {
   .bottom-nav a{
     text-decoration: none;
   }
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .cell  {
-    width: 50%;
-    padding: 0 1em;
-  }
 }
 
 @media (min-width: 1024px) {
   body {
     padding-top: 25px;
   }
+  .main-header,
   .banner,
   .col,
   .main-footer {
@@ -183,19 +181,22 @@ img {
   }
   .title {
     float: left;
-    padding-left: 1.5em;
   }
   .main-nav ul {
     float: right
   }
   .main-nav li {
     float: left;
-    background-color: f5f5f5;
+    margin: 0;
+    background-color: #f5f5f5;
     font-size: 1em;
     font-weight: bold;
   }
   .cell {
      width: calc(100% / 3);
+   }
+   .main-footer {
+     margin: 0 50px
    }
 }
 
