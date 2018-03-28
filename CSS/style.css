@@ -159,10 +159,44 @@ img {
   .bottom-nav a{
     text-decoration: none;
   }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .cell  {
+    width: 50%;
+    padding: 0 1em;
+  }
 }
 
 @media (min-width: 1024px) {
-
+  body {
+    padding-top: 25px;
+  }
+  .banner,
+  .col,
+  .main-footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .title {
+    float: left;
+    padding-left: 1.5em;
+  }
+  .main-nav ul {
+    float: right
+  }
+  .main-nav li {
+    float: left;
+    background-color: f5f5f5;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .cell {
+     width: calc(100% / 3);
+   }
 }
 
 /* ---- Float clearfix ---- */
